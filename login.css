@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f8f9fa;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+#cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+}
+
+#cabecalho a {
+  color: #fff;
+  text-decoration: none;
+}
+#cabecalho h1 {
+  font-size: 52px;
+}
+#formularios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 180px;
+  gap: 20px;
+}
+#email-cliente,
+#senha {
+  width: 600px;
+  height: 40px;
+  border-radius: 10px;
+}
+.botao-login {
+  width: 600px;
+  background-color: #000;
+  height: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.botao-login a {
+  text-decoration: none;
+  color: #fff;
+}
+.botao-login:hover {
+  transform: scale(1.03);
+  text-decoration: underline;
+}
+
+.botao-login {
+  color: #f8f9fa;
+}
+
+.rodape {
+  display: flex;
+  background-color: #000;
+  margin-top: 200px;
+  color: #fff;
+}
+
+#nome-loja {
+  border: none;
+}
+
+.rodape {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 20px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #ffffff;
+  color: #111111;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #cccccc;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: #777;
+  font-size: 12px;
+}
+
+.payment-methods span {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .payment-methods span {
+    margin: 0 5px;
+  }
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem; /* Tamanho padrão para telas menores */
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Um leve espaçamento entre as letras melhora a leitura */
+  line-height: 1.1;
+  margin-top: 5px;
+}
+
+/* Ajuste para telas de computador */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.8rem; /* Aumenta o tamanho no desktop */
+  }
+}

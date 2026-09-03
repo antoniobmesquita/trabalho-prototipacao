@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1> <a href="index.html">DISTORÇÃO STORE</a></h1>
+    </header>
+    <main id="main">
+        <div class="lista-carrinho">
+            <h2>Meu carrinho</h2>
+            <ul class="produtos-carrinho">
+                <li class="produto"> <img src="assets/ghost_bc_azul_frente.webp" alt="Camiseta banda Ghost">
+                    <ul class="detalhes-produto">
+                        <li class="nome-produto">Camiseta</li>
+                        <li class="detalhe-produto">Cor: Preta</li>
+                        <li class="detalhe-produto">Ref: </li>
+                        <ul class="numeros-pedido">
+                            <li class="quantidade"><input type="button" value=" - "></li>
+                            <li class="quantidade">1</li>
+                            <li class="quantidade"><input type="button" value=" + "></li>
+                            <li class="valor-produto">R$ 399,90</li>
+
+                        </ul>
+                    </ul>
+
+                </li>
+                <li class="produto"><img src="assets/colar-cruz.jpeg" alt="">
+                    <ul class="detalhes-produto">
+                        <li class="nome-produto">Colar</li>
+                        <li class="detalhe-produto">Cor: Prata</li>
+                        <li class="detalhe-produto">Ref: </li>
+                        <ul class="numeros-pedido">
+
+                            <li class="quantidade"><input type="button" value=" - "></li>
+                            <li class="quantidade">1</li>
+                            <li class="quantidade"><input type="button" value=" + "></li>
+                            <li class="valor-produto">R$ 79,90</li>
+
+                        </ul>
+                    </ul>
+                </li>
+                <li class="produto"> <img src="assets/anel-cruz.jfif" alt="">
+                    <ul class="detalhes-produto">
+                        <li class="nome-produto">Anel</li>
+                        <li class="detalhe-produto">Cor: Prata</li>
+                        <li class="detalhe-produto">Ref: </li>
+                        <ul class="numeros-pedido">
+                            <li class="quantidade"><input type="button" value=" - "></li>
+                            <li class="quantidade">1</li>
+                            <li class="quantidade"><input type="button" value=" + "></li>
+                            <li class="valor-produto">R$ 399,90</li>
+
+                        </ul>
+                    </ul>
+                </li>
+                <li class="produto"><img src="assets/silversun.jpg" alt="Camiseta banda Silversun Pickups">
+                    <ul class="detalhes-produto">
+                        <li class="nome-produto">Camiseta</li>
+                        <li class="detalhe-produto">Cor: Branca</li>
+                        <li class="detalhe-produto">Ref: </li>
+                        <ul class="numeros-pedido">
+                            <li class="quantidade"><input type="button" value=" - "></li>
+                            <li class="quantidade">1</li>
+                            <li class="quantidade"><input type="button" value=" + "></li>
+                            <li class="valor-produto">R$ 399,90</li>
+
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="detalhes-carrinho">
+            <h4>Detalhes do pedido</h4>
+            <ul class="detalhes-pedido">
+                <li><span>Subtotal</span> <span>R$ 1.279,60</span></li>
+                <li><span>Frete</span> <span>Grátis</span></li>
+                <li><span>Desconto</span> <span>R$ 0,00</span></li>
+            </ul>
+            <form class="cupom-form" action="#" method="POST">
+                <input type="text" class="cupom-input" placeholder="Cupom de desconto">
+                <button type="submit" class="btn-cupom">Aplicar</button>
+            </form>
+            <div class="total-pedido">
+                <span>Total</span>
+                <span>R$ 1.279,60</span>
+            </div>
+            <button class="btn-finalizar">Finalizar compra</button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>A Loja</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Nossas Lojas</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Acompanhar Pedido</a></li>
+                    <li><a href="#">Guia de Tamanhos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #b0b0b0; margin-bottom: 15px;">Receba 10% OFF na sua primeira compra e novidades
+                    exclusivas.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Seu e-mail principal" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Distorção Store. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+            <div class="payment-methods">
+                <span>Pix</span>
+                <span>Cartão de Crédito</span>
+                <span>Boleto</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
