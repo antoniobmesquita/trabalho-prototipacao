@@ -31,17 +31,21 @@ body {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  padding: 180px;
+  padding: 180px 20px;
   gap: 20px;
+}
+#formularios li {
+  width: 100%;
+  max-width: 600px;
 }
 #email-cliente,
 #senha {
-  width: 600px;
+  width: 100%;
   height: 40px;
   border-radius: 10px;
 }
 .botao-login {
-  width: 600px;
+  width: 100%;
   background-color: #000;
   height: 30px;
   border-radius: 20px;
@@ -182,5 +186,23 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     font-size: 2.8rem; /* Aumenta o tamanho no desktop */
+  }
+}
+
+@media (max-width: 700px) {
+  #formularios {
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #formularios {
+    padding: 50px 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rodape {
+    margin-top: 60px;
   }
 }

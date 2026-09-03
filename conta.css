@@ -36,17 +36,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: 20px;
+  margin: 20px;
+  max-width: 600px;
 }
 
 #dados input {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 30px;
   border-radius: 4px;
   margin: 5px;
 }
 .botao-criar-conta {
   width: 200px;
+  max-width: 100%;
   background-color: #000;
   height: 30px;
   border-radius: 20px;
@@ -182,5 +185,17 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     font-size: 2.8rem; /* Aumenta o tamanho no desktop */
+  }
+}
+
+@media (max-width: 600px) {
+  #dados {
+    margin: 15px;
+  }
+  .botao-criar-conta {
+    width: 100%;
+  }
+  .rodape {
+    margin-top: 60px;
   }
 }
